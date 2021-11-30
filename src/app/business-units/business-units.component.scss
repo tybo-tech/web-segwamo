@@ -1,0 +1,75 @@
+@import '../../assets/styles/colors.scss';
+
+.units {
+  display: grid;
+  margin: 0 auto;
+  
+  grid-template-columns: 100%;
+  @media (min-width : 1050px) {
+    grid-template-columns: 50% auto;
+  }
+
+  .unit {
+    padding: 0;
+    background: $primary;
+
+    .details {
+      padding: 1.5em;
+      @media (min-width : 1050px) {
+        padding: 5em;
+      }
+    }
+
+    h3 {
+      font-weight: 700;
+      text-align: left;
+      padding: 1em 0;
+    }
+
+    p {
+      font-weight: 500;
+    }
+
+    button {
+      margin: 1em 0;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .cloud {
+    background: $cloud;
+  }
+
+  .sky {
+    background: $sky;
+  }
+
+  .black {
+    background: $black;
+    color: $white;
+  }
+
+  .chacole {
+    background: $chacole;
+    color: $white;
+  }
+
+  .green {
+    background: $green;
+    color: $white;
+  }
+}
+
+.last {
+  background: $green;
+  color: $white;
+  padding: 3em 0;
+
+  p {
+    max-width: $max-width;
+    margin: 1em auto;
+  }
+}

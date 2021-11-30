@@ -1,0 +1,54 @@
+@import '../../../assets/styles/colors.scss';
+
+.slider {
+  display: grid;
+  grid-template-columns: 100%;
+  max-width: $max-width;
+  // background: red;
+  margin: auto;
+
+  @media (min-width : 1050px) {
+    grid-template-columns: 60% auto;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    @media (min-width : 1050px) {
+      width: auto;
+      height: 35em;
+    }
+  }
+
+  h1 {
+    padding: 1em;
+    font-weight: 900;
+    text-align: left;
+    text-transform: capitalize;
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    font-size: 1.5em;
+    margin-top: 1em;
+
+    @media (min-width : 1050px) {
+      font-size: 2.5em;
+      margin-top: 4em;
+      padding: 1em 0;
+      max-width: 20em;
+
+
+    }
+
+    span {
+      color: $primary;
+    }
+  }
+
+  button {
+    margin: 0 1.5em;
+    @media (min-width : 1050px) {
+      margin: 0;
+    }
+  }
+}

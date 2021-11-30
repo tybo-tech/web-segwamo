@@ -1,0 +1,63 @@
+<app-banner-widget *ngIf="!hideBanner" [heading]="' Business Units'"></app-banner-widget>
+
+<div class="units">
+  <div class="unit" *ngFor="let item of businessUnits; let i = index" [ngClass]="item.Class">
+    <span *ngIf="(i+1) % 2 == 0">
+      <div class="img">
+        <img [src]="item.Image" alt="">
+      </div>
+      <div class="details">
+
+        <h3>
+          <span>{{i+1}}. </span> {{item.Name}}
+        </h3>
+
+        <p>
+          {{item.Intro}}
+        </p>
+        <button (click)="view(item)">Learn more</button>
+
+
+      </div>
+
+
+    </span>
+    <span *ngIf="(i+1) % 2 != 0">
+      <div class="details">
+        <h3>
+          <span>{{i+1}}. </span> {{item.Name}}
+        </h3>
+
+        <p>
+          {{item.Intro}}
+        </p>
+        <button  (click)="view(item)">Learn more</button>
+
+
+      </div>
+
+      <div class="img">
+        <img [src]="item.Image" alt="">
+      </div>
+    </span>
+
+  </div>
+
+</div>
+
+
+<div class="last">
+  <h3>
+    7. Minerals And Beneficiation
+  </h3>
+
+  <p>
+    SEWGAMO Holding is Black-owned Company established in 2016. Through its subsidiary, Minerals and Beneficiation
+    which is a South African company collaborating with International Technical Partners is the leading technology
+    solution provider that is able to perform the agglomeration of large quantities of waste commodity or mineral
+    fines. Such fines, depending on the commodity or mineral are generally treated as waste or sold as a low-grade
+    derivative. The technology available to Minerals and Beneficiation is able to transform such waste into
+    commercially viable products to be sold in domestic and export markets.
+  </p>
+  <button  (click)="view(businessUnit)">Learn more</button>
+</div>

@@ -1,0 +1,86 @@
+<div class="holder" *ngIf="businessUnit" [ngClass]="businessUnit.Class">
+
+  <div class="page-banner">
+    <div class="col">
+      <h1>
+        {{businessUnit.Name}}
+      </h1>
+
+      <p>
+        {{businessUnit.Intro}}
+      </p>
+    </div>
+
+
+
+    <div class="img">
+      <img [src]="businessUnit.Image" alt="">
+    </div>
+
+
+  </div>
+</div>
+
+
+<div class="vision">
+  <div class="grid">
+    <div class="col" *ngIf="businessUnit.Mission">
+      <img src="assets/images/mission.png" alt="">
+      <div class="details">
+        <h4>
+          Our Mission
+        </h4>
+        <div [innerHtml]="businessUnit.Mission"></div>
+      </div>
+    </div>
+
+    <div class="col" *ngIf="businessUnit.Vision">
+      <img src="assets/images/vision.png" alt="">
+      <div class="details">
+        <h4>
+          Our vision
+        </h4>
+        <div [innerHtml]="businessUnit.Vision"></div>
+      </div>
+    </div>
+
+
+    <div class="col" *ngIf="businessUnit.Keys">
+      <img src="assets/images/keys.png" alt="">
+      <div class="details">
+        <h4>
+          Values
+        </h4>
+        <div [innerHtml]="businessUnit.Keys"></div>
+      </div>
+    </div>
+
+    <div class="col" *ngIf="businessUnit.Believe">
+      <img src="assets/images/believe.png" alt="">
+      <div class="details">
+        <h4>
+          We believe in
+        </h4>
+        <div [innerHtml]="businessUnit.Believe"></div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="holder" *ngIf="businessUnit" [ngClass]="businessUnit.Class">
+  <div class="page-banner" *ngIf="businessUnit" [ngClass]="businessUnit.Class">
+    <div class="col">
+      <div class="body" [innerHtml]="businessUnit.Body"></div>
+
+    </div>
+
+    <div class="col">
+      <div class="body" [innerHtml]="businessUnit.Body2"></div>
+
+    </div>
+
+  </div>
+
+</div>

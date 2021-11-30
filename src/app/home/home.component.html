@@ -1,0 +1,32 @@
+<div class="section">
+  <app-home-slider></app-home-slider>
+</div>
+<div class="section" *ngIf="services">
+  <!-- <h2>
+    Business Units
+  </h2> -->
+  <app-business-units [hideBanner]="hideBanner"></app-business-units>
+  <!-- <div class="cards">
+    <app-card *ngFor="let item of services" [item]="item"></app-card>
+
+  </div> -->
+</div>
+
+
+
+<div class="section about">
+  <h2>
+    About Us
+  </h2>
+
+  <p>
+    A Corporate Business Profile of Sello Wa Ga Gadifele Mosai Holding, otherwise known as SEWGAMO Holding. SEWGAMO
+    Holding operate as a 100% Black Owned holding company meaning that it is a company that does not have any
+    operations, activities, or other active business itself.
+  </p>
+  <br>
+  <div class="action">
+    <a routerLink="/about-us"><button>Learn more</button></a>
+
+  </div>
+</div>
